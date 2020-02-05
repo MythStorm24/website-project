@@ -1,0 +1,385 @@
+<!--
+Citations
+
+Verified on http://jigsaw.w3.org/css-validator/
+
+Fonts retreived from
+https://fonts.google.com/specimen/Roboto
+
+Product image retrevied from
+https://limitedrungames.com/
+
+Based on the styleguide template.html template found on Canvas
+
+Knowledge base and resources
+
+IAT 339 Lecture 1 & Live Demo
+
+IAT 339 Lecture 2 & Live Demo
+
+IAT 339 Lecture 3 & Live Demo
+
+IAT 339 Week 3 Lab Challenge
+
+https://www.w3schools.com/cssref/pr_text_text-decoration.asp
+
+https://www.w3schools.com/html/html_lists.asp
+
+https://www.w3schools.com/html/html_forms.asp
+
+https://www.w3schools.com/cssref/pr_font_weight.asp
+
+https://www.w3schools.com/cssref/pr_font_font-size.asp
+
+https://www.w3schools.com/colors/colors_picker.asp
+
+https://www.w3schools.com/tags/ref_pxtoemconversion.asp
+
+https://www.w3schools.com/css/css_border.asp
+
+https://www.w3schools.com/css/css_align.asp
+
+https://www.w3schools.com/howto/howto_css_images_side_by_side.asp
+-->
+
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	
+    <title>Style Guide</title>
+
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <h1>Style Guide</h1>
+
+    <nav>
+      
+	  <div class="nav-bar">
+		<h3>Site Navigation</h3>
+		<a href="styleguide.html" class="content-block nav-button">Style Guide</a>
+		<a href="wireframes.html" class="content-block nav-button">Wire Frames</a>
+		<a href="citations.html" class="content-block nav-button">Citations</a>
+      </div>
+	  
+	  <div class="nav-bar">
+		<h3>Page Navigation</h3>
+        <a href="#interactive_elements" class="content-block nav-button">Interactive Elements</a>
+        <a href="#text_elements" class="content-block nav-button">Text Elements</a>
+        <a href="#combined_elements" class="content-block nav-button">Combined Elements</a>
+      </div>
+
+    </nav>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+
+      <!-- Nav Button Styling Section -->
+      <section>
+
+        <h2>Navigation Button</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.nav-button</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="#" class="nav-button"&gt;Default Button&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a href="#" class="nav-button">Default Button</a>
+
+      </section>
+
+      <!-- Default Link styling section -->
+      <section>
+        <h2>In-text link</h2>
+		
+		<h3>CSS selector:</h3>
+		<p>.text-link</p>
+		
+		<h3>Sample code:</h3>
+        <code>&lt;a href="#" class="text-link"&gt;Default Link&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a href="#" class="text-link">Default Link</a>
+		
+      </section>
+
+      <!-- Submit Button Styling Section -->
+      <section>
+        <h2>Submit/Reset Buttons</h2>
+		
+		<h3>CSS selector:</h3>
+		<p>.submit-button</p>
+		
+		<h3>Sample code:</h3>
+		
+        <code>
+			&lt;form action="#"&gt;
+				&lt;input type="submit" value="Submit class="submit-button"&gt;
+			&lt;/form&gt;
+		</code>
+
+        <h3>Rendered element:</h3
+		
+		<form action="#">
+			<input type="submit" value="Submit" class="submit-button">
+		</form>
+		
+      </section>
+
+      <!-- Text Input Styling Section -->
+      <section>
+        <h2>Text Input Field</h2>
+		
+		<h3>CSS selector:</h3>
+		
+		<p>.text-input</p>
+		
+		<h3>Sample code:</h3>
+		
+		<code>
+			&lt;form action="#"&gt;
+				&lt;input type="text" name="field" value="" class="text-input&gt;
+			&lt;/form&gt;
+		</code>
+
+		<h3>Rendered element:</h3>
+		
+		<form action="#">
+			<input type="text" name="field" value="" class="text-input">
+		</form>
+		
+		
+      </section>
+
+    </section>
+	
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+	
+    <section id="text_elements">
+
+      <!-- Headings Styling Section -->
+      <section>
+        <h2>Headings</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.head</p>
+
+        <h3>Sample code:</h3>
+		<code>&lt;h1 class="head"&gt;H1 Default Heading Styling&lt;/h1&gt;</code>
+		<code>&lt;h3 class="head"&gt;H2 Default Heading Styling&lt;/h2&gt;</code>
+        <code>&lt;h3 class="head"&gt;H3 Default Heading Styling&lt;/h3&gt;</code>
+
+        <h3>Rendered element:</h3>
+		
+		<h1 class="head">H1 Default Heading Styling</h1>
+		<h2 class="head">H2 Default Heading Styling</h2>
+        <h3 class="head">H3 Default Heading Styling</h3>
+		
+      </section>
+
+      <!-- Paragraph Styling Section -->
+      <section>
+        <h2>Paragraphs</h2>
+		
+		<h3>CSS selector:</h3>
+		<p>.text</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;p class="text"&gt;Default Paragraph Styling&lt;/p&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <p class="text">Default Paragraph Styling</p>
+		
+      </section>
+
+      <!-- Bulleted Lists Styling Section -->
+      <section>
+        <h2>Bulleted Lists</h2>
+		
+		<h3>CSS selector:</h3>
+		<p>.list-bullet</p>
+
+        <h3>Sample code:</h3>
+		
+        <code>
+			&lt;ul class="list-bullet"&gt;
+			&lt;li&gt;List Item&lt;/li&gt;
+			&lt;li&gt;List Item&lt;/li&gt;
+			&lt;li&gt;List Item&lt;/li&gt;
+			&lt;li&gt;List Item&lt;/li&gt;
+			&lt;/ul&gt;
+		</code>
+
+        <h3>Rendered element:</h3>
+        <ul class="list-bullet">
+			<li>List Item</li>
+			<li>List Item</li>
+			<li>List Item</li>
+			<li>List Item</li>
+		</ul>
+		
+      </section>
+
+      <!-- Numbered Lists Styling Section -->
+      <section>
+        <h2>Numbered Lists</h2>
+		
+		<h3>CSS selector:</h3>
+		<p>.list-number</p>
+
+        <h3>Sample code:</h3>
+		
+        <code>
+			&lt;ol class="list-number"&gt;
+			&lt;li&gt;List Item&lt;/li&gt;
+			&lt;li&gt;List Item&lt;/li&gt;
+			&lt;li&gt;List Item&lt;/li&gt;
+			&lt;li&gt;List Item&lt;/li&gt;
+			&lt;/ol&gt;
+		</code>
+
+        <h3>Rendered element:</h3>
+        <ol class="list-number">
+			<li>List Item</li>
+			<li>List Item</li>
+			<li>List Item</li>
+			<li>List Item</li>
+		</ol>
+      </section>
+
+    </section>
+    
+	<!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+	
+    <section id="combined_elements">
+
+      <section>
+        <h2>Main Navigation</h2>
+		
+		<h3>CSS selector:</h3>
+		<p>.nav-bar</p>
+
+        <h3>Sample code:</h3>
+		
+        <code>
+		
+		&lt;div class="nav-bar"&gt;
+			&lt;a href="#" class="nav-button">Games&lt;/a&gt;
+			&lt;a href="#" class="nav-button">Merch&lt;/a&gt;
+			&lt;a href="#" class="nav-button">Add-Ons&lt;/a&gt;
+			&lt;a href="#" class="nav-button">Soundtracks&lt;/a&gt;
+			&lt;a href="#" class="nav-button">Support&lt;/a&gt;
+			&lt;a href="#" class="nav-button">Support&lt;/a&gt;
+			&lt;a href="#" class="nav-button">About Us&lt;/a&gt;
+		&lt;div&gt;
+		
+		</code>
+
+        <h3>Rendered element:</h3>
+		
+		<div class="nav-bar">
+			<a href="#combined_elements" class="nav-button">Games</a>
+			<a href="#combined_elements" class="nav-button">Merch</a>
+			<a href="#combined_elements" class="nav-button">Add-Ons</a>
+			<a href="#combined_elements" class="nav-button">Soundtracks</a>
+			<a href="#combined_elements" class="nav-button">More</a>
+			<a href="#combined_elements" class="nav-button">Support</a>
+			<a href="#combined_elements" class="nav-button">About Us</a>
+		</div>
+	  </section>
+		
+		
+      </section>
+
+      <section>
+        <h2>Product Listing</h2>
+		
+		<h3>CSS selector:</h3>
+		<p>.product</p>
+
+        <h3>Sample code:</h3>
+		
+        <code>
+
+		&lt;div class="product"&gt;
+
+				&lt;img src="img/product.png" alt="Default product image"&gt;
+			
+				&lt;h2 class="head">Default Product Listing&lt;/h2&gt;&lt;br&gt;
+		
+				&lt;p class="text"&gt;
+				This is a default product listing page to showcase how it is designed to look on the site.
+				This section is used to describe the product in detail and its relevant features.
+				This section also can contain links to other websites which describe the product further such as linking to &lt;a href="#" class="text-link">Wikipedia&lt;/a&gt;
+				or &lt;a href="#" class="text-link">YouTube&lt;/a&gt;.&lt;br&gt;&lt;br&gt;
+				This paragraph is being made intentionally long to fill up space and to test formatting.&lt;br&gt;&lt;br&gt;
+				
+				&lt;strong&gt;PREORDERS CLOSE JANUARAY 31ST AT 11:59 PST&lt;/strong&gt;&lt;br&gt;&lt;br&gt;
+
+				&lt;/p&gt;
+				
+				&lt;form action="#" class="content-block"&gt;
+					&lt;input type="submit" value="Buy" class="submit-button"&gt;
+				&lt;/form&gt;
+		
+		&lt;/div&gt;
+
+		</code>
+
+        <h3>Rendered element:</h3>
+
+		<div class="product">
+
+				<img src="img/product.png" alt="Default product image">
+			
+				<h2 class="head">Default Product Listing</h2><br>
+		
+				<p class="text">
+				This is a default product listing page to showcase how it is designed to look on the site.
+				This section is used to describe the product in detail and its relevant features.
+				This section also can contain links to other websites which describe the product further such as linking to <a href="#" class="text-link">Wikipedia</a>
+				or <a href="#" class="text-link">YouTube</a>.<br><br>
+				This paragraph is being made intentionally long to fill up space and to test formatting.<br><br>
+				
+				<strong>PREORDERS CLOSE JANUARAY 31ST AT 11:59 PST</strong><br><br>
+
+				</p>
+				
+				<form action="#" class="content-block">
+					<input type="submit" value="Buy" class="submit-button">
+				</form>
+		
+		</div>
+
+      </section>
+		
+      </section>
+
+    </section>
+	
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+  </body>
+</html>
