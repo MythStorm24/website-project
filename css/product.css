@@ -1,137 +1,79 @@
-.head
+.product-grid
 {
-	font-weight: bold;
-	text-align: center;
+	align-items: flex-end;
+	justify-content: space-around;
 }
 
-.head h1
+.product-main
 {
-	padding: 50px 15px;
-	font-size: 48px;
+	align-items: flex-start;
+	justify-content: space-around;
 }
 
-.head h2
+.product-review
 {
-	padding: 25px 15px;
-	font-size: 36px;
+	align-items: center;
+	justify-content: space-between;
 }
 
-.head h3
+.product-item
 {
-	padding: 15px;
+	flex-basis: 400px;
+	
+	padding: 25px;
+}
+
+.product-header
+{
+	margin: 15px auto;
+	padding: 5px;
+}
+
+.product-image
+{
+	cursor: pointer;
+}
+
+.star-rating
+{	
+	unicode-bidi: bidi-override;
+	direction: rtl;
+	
 	font-size: 24px;
 }
 
-.head h4
+.star-rating span
 {
+	position: relative;
+	
+	display: inline-block;
+	
 	margin: 0;
 	padding: 0;
-	font-size: 24px;
-}
-
-.text
-{
-	font-size: 16px;
-}
-
-.text-align-left
-{
-	text-align: left;
-}
-
-.text-align-right
-{
-	text-align: right;
-}
-
-.text-link
-{
-	color: #0000EE;
-	text-decoration: none;
-}
-
-.text-link:hover, .text-link:focus
-{
-	color: #EE0000;
-	text-decoration: underline;
-}
-
-.text-form
-{
-	width: auto;
-	height: auto;
 	
-	min-width: 50%;
-	max-width: 80%;
+	width: 1em;
 }
 
-.text-resize
+.star-rating span.rating:before, .star-rating span.rating ~ span:before
 {
-	resize: both;
-	overflow: auto;
+	position: absolute;
 	
-	min-height: 50%;
-}
-
-.text-input
-{
-	margin: 15px;
-	padding: 5px;
+	content: "\2605";
 	
-	border: 2px solid #FFFFFF;
-	
-	outline: none;
-	
-	transition: border 0.25s ease-out;
-}
-
-.text-input:focus
-{
-	border: 2px solid #0066cc;
-}
-
-.submit-button
-{	
-	display: inline-block;
-	padding: 15px 25px;
-	
-	cursor: pointer;
-	
-	border-style: none;
-	border-radius: 10px;
-
-	color: #FFFFFF;
-	font-size: 18px;
-	font-weight: bold;
-	
-	text-align: center; 
-	text-decoration: none;
-	text-transform: uppercase;
-	
-	background-color: #3399ff;
-	
-	transition: background-color 0.25s ease-out;
-}
-
-.submit-button:hover, .submit-button:focus
-{
-	background-color: #0066cc;
-}
-
-@media all and (max-width: 1150px)
-{
-	.text-align-left, .text-align-right
-	{
-		text-align: center;
-	}
+	color: #FFA500;
 }
 
 @media all and (max-width: 775px)
 {
-	.text-form
+	.product-main, .product-review
 	{
-		width: 100%;
-		min-width: 80%;
+		flex-direction: column;
+		height: auto;
+	}
+	
+	.star-rating
+	{
+		margin: 10px 0;
 	}
 }
 

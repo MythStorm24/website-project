@@ -1,142 +1,111 @@
-.head
-{
-	font-weight: bold;
-	text-align: center;
-}
+<!DOCTYPE html>
 
-.head h1
-{
-	padding: 50px 15px;
-	font-size: 48px;
-}
+<html lang="en">
 
-.head h2
-{
-	padding: 25px 15px;
-	font-size: 36px;
-}
+  <head>
 
-.head h3
-{
-	padding: 15px;
-	font-size: 24px;
-}
-
-.head h4
-{
-	margin: 0;
-	padding: 0;
-	font-size: 24px;
-}
-
-.text
-{
-	font-size: 16px;
-}
-
-.text-align-left
-{
-	text-align: left;
-}
-
-.text-align-right
-{
-	text-align: right;
-}
-
-.text-link
-{
-	color: #0000EE;
-	text-decoration: none;
-}
-
-.text-link:hover, .text-link:focus
-{
-	color: #EE0000;
-	text-decoration: underline;
-}
-
-.text-form
-{
-	width: auto;
-	height: auto;
+    <meta charset="utf-8">
 	
-	min-width: 50%;
-	max-width: 80%;
-}
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-.text-resize
-{
-	resize: both;
-	overflow: auto;
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/flex.css" rel="stylesheet">
+	<link href="css/nav.css" rel="stylesheet">
+	<link href="css/footer.css" rel="stylesheet">
+	<link href="css/product.css" rel="stylesheet">
+	<link href="css/carousel.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
 	
-	min-height: 50%;
-}
-
-.text-input
-{
-	margin: 15px;
-	padding: 5px;
+	<title>Limited Run Games</title>
 	
-	border: 2px solid #FFFFFF;
+  </head>
+  
+  <body>
+  
+   <nav class="flex-container nav-bar">
+   
+		<div class="flex-container nav-collapse">
+			<div class="nav-menu">
+				<img src="img/nav/nav-menu.svg" width="50" height="50" alt="Hamburger menu to bring up navigation for mobile devices">
+			</div>
+		
+			<a href="home.html" class="nav-logo">
+				<img src="img/nav/logo.png" width="100" height="100" alt="Logo featuring stylized text which says Limited Run">
+			</a>
+			
+			<a href="cart.html" class="nav-cart">
+				<img src="img/nav/nav-cart.svg" width="50" height="50" alt="Cart shortcut menu for mobile devices">
+			</a>
+		</div>
+		
+		<div class="flex-container nav-list nav-hidden">
+			<a href="games.html" class="nav-button">Games</a>
+			<a href="merch.html" class="nav-button">Merch</a>
+			<a href="soundtracks.html" class="nav-button">Soundtracks</a>
+			<a href="contact.html" class="nav-button">Contact</a>
+			<a href="about.html" class="nav-button">About Us</a>
+			<a href="cart.html" class="nav-button">Cart</a>
+			<a href="account.html" class="nav-button">Sign In</a>
+		</div>
+		
+    </nav>
 	
-	outline: none;
+	<section class="page-layout">
 	
-	transition: border 0.25s ease-out;
-}
+		<div class="flex-layout">
+			
+			<div class="page-layout">
+			
+				<div class="head">
+					<h1>Thank You</h1>
+					
+					<h2>Order #983198</h2>
+					
+					<h3>Your order is confirmed! You'll receive a confirmation email with your order number shortly.</h3>
+				</div>
+				
+				<div class="flex-row">
+					<a href="home.html" class="submit-button">Continue Shopping</a>
+				</div>
+		
+			</div>
+		
+			<div class="flex-container">
+				<img src="img/banners/banner-2.jpg" class="image-layout" width="1600" height="1600" alt="Banner image featuring colorized Limited Run Games logos in a spiral around the text the future is physical">
+			</div>
 
-.text-input:focus
-{
-	border: 2px solid #0066cc;
-}
-
-.submit-button
-{	
-	display: inline-block;
-	padding: 15px 25px;
+		</div>
+		
+	</section>
+		
+	<footer class="flex-container footer-bar">
 	
-	cursor: pointer;
+		<div class="flex-container footer-newsletter">
+		
+			<p class="footer-text">Subscribe To Our Newsletter</p>
+			
+			<form class="footer-form">
+				<input type="email" class="text-input" placeholder="Email Address">
+				
+				<button type="submit" class="submit-button">Subscribe</button>
+			</form>		
+			
+		</div>
 	
-	border-style: none;
-	border-radius: 10px;
-
-	color: #FFFFFF;
-	font-size: 18px;
-	font-weight: bold;
+		<div class="footer-copyright">
+			<p class="footer-text">© 2020 Limited Run Games.</p>
+		</div>
 	
-	text-align: center; 
-	text-decoration: none;
-	text-transform: uppercase;
+	</footer>
 	
-	background-color: #3399ff;
+	<script src="js/nav.js"></script>
 	
-	transition: background-color 0.25s ease-out;
-}
-
-.submit-button:hover, .submit-button:focus
-{
-	background-color: #0066cc;
-}
-
-@media all and (max-width: 1150px)
-{
-	.text-align-left, .text-align-right
-	{
-		text-align: center;
-	}
-}
-
-@media all and (max-width: 775px)
-{
-	.text-form
-	{
-		width: 100%;
-		min-width: 80%;
-	}
-}
+  </body>
+  
+</html>
 
 
-/*
+<!--
 __________________________________
 Citations
 __________________________________
@@ -336,4 +305,4 @@ https://www.youtube.com/watch?v=tEC4kqzNTnM
 
 https://www.youtube.com/watch?v=_7GC6i7ylDI
 ___________________________
-*/
+-->

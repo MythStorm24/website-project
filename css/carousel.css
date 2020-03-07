@@ -1,138 +1,109 @@
-.head
+.carousel
 {
-	font-weight: bold;
-	text-align: center;
+	position: relative;
+	
+	margin: 0 auto 75px;
+	
+	width: 80%;
+	height: 800px;
 }
 
-.head h1
+.carousel-track-container
 {
-	padding: 50px 15px;
-	font-size: 48px;
+	position: relative;
+	
+	overflow: hidden;
+	
+	height: 100%;
 }
 
-.head h2
+.carousel-track
 {
-	padding: 25px 15px;
-	font-size: 36px;
-}
-
-.head h3
-{
-	padding: 15px;
-	font-size: 24px;
-}
-
-.head h4
-{
+	position: relative;
+	
 	margin: 0;
 	padding: 0;
-	font-size: 24px;
-}
-
-.text
-{
-	font-size: 16px;
-}
-
-.text-align-left
-{
-	text-align: left;
-}
-
-.text-align-right
-{
-	text-align: right;
-}
-
-.text-link
-{
-	color: #0000EE;
-	text-decoration: none;
-}
-
-.text-link:hover, .text-link:focus
-{
-	color: #EE0000;
-	text-decoration: underline;
-}
-
-.text-form
-{
-	width: auto;
-	height: auto;
 	
-	min-width: 50%;
-	max-width: 80%;
+	height: 100%;
+	
+	list-style: none;
+	transition: transform 250ms ease-in;
 }
 
-.text-resize
+.carousel-image
 {
-	resize: both;
-	overflow: auto;
+	cursor: pointer;
 	
-	min-height: 50%;
+	width: 100%;
+	height: 100%;
+	
+	object-fit: cover;
 }
 
-.text-input
+.carousel-slide
 {
-	margin: 15px;
-	padding: 5px;
+	position: absolute;
 	
-	border: 2px solid #FFFFFF;
+	top: 0;
+	bottom: 0;
 	
-	outline: none;
-	
-	transition: border 0.25s ease-out;
+	width: 100%;
 }
 
-.text-input:focus
+.carousel-button
 {
-	border: 2px solid #0066cc;
-}
-
-.submit-button
-{	
-	display: inline-block;
-	padding: 15px 25px;
+	position: absolute;
 	
 	cursor: pointer;
 	
-	border-style: none;
-	border-radius: 10px;
-
-	color: #FFFFFF;
-	font-size: 18px;
-	font-weight: bold;
+	transform: translateY(-50%);
 	
-	text-align: center; 
-	text-decoration: none;
-	text-transform: uppercase;
+	background: transparent;
 	
-	background-color: #3399ff;
+	border: none;
 	
-	transition: background-color 0.25s ease-out;
+	top: 50%;
 }
 
-.submit-button:hover, .submit-button:focus
+.carousel-left
 {
-	background-color: #0066cc;
+	left: -35px;
 }
 
-@media all and (max-width: 1150px)
+.carousel-right
 {
-	.text-align-left, .text-align-right
-	{
-		text-align: center;
-	}
+	right: -35px;
 }
 
-@media all and (max-width: 775px)
+.carousel-nav
 {
-	.text-form
-	{
-		width: 100%;
-		min-width: 80%;
-	}
+	display: flex;
+	
+	margin-top: 10px;
+	
+	padding: 10px 0;
+	
+	justify-content: center;
+}
+
+.carousel-indicator
+{
+	margin: 0 12px;
+	
+	cursor: pointer;
+	
+	width: 15px;
+	height: 15px;
+	
+	border: 0;
+	border-radius: 50%;
+	
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.carousel-indicator.carousel-current-slide
+{
+	background: rgba(0, 0, 0, 0.75);
 }
 
 
